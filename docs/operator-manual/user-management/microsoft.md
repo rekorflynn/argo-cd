@@ -7,7 +7,7 @@
 ## Azure AD SAML Enterprise App Auth using Dex
 ### Configure a new Azure AD Enterprise App
 
-1. From the `Azure Active Directory` > `Enterprise applications` menu, choose `+ New application`
+1. From the `Microsoft Entra ID` > `Enterprise applications` menu, choose `+ New application`
 2. Select `Non-gallery application`
 3. Enter a `Name` for the application (e.g. `Argo CD`), then choose `Add`
 4. Once the application is created, open it from the `Enterprise applications` menu.
@@ -74,7 +74,7 @@
 ### Configure a new Azure AD App registration
 #### Add a new Azure AD App registration
 
-1. From the `Azure Active Directory` > `App registrations` menu, choose `+ New registration`
+1. From the `Microsoft Entra ID` > `App registrations` menu, choose `+ New registration`
 2. Enter a `Name` for the application (e.g. `Argo CD`).
 3. Specify who can use the application (e.g. `Accounts in this organizational directory only`).
 4. Enter Redirect URI (optional) as follows (replacing `my-argo-cd-url` with your Argo URL), then choose `Add`.
@@ -109,7 +109,7 @@
 
 ### Associate an Azure AD group to your Azure AD App registration
 
-1. From the `Azure Active Directory` > `Enterprise applications` menu, search the App that you created (e.g. `Argo CD`).
+1. From the `Microsoft Entra ID` > `Enterprise applications` menu, search the App that you created (e.g. `Argo CD`).
       - An Enterprise application with the same name of the Azure AD App registration is created when you add a new Azure AD App registration.
 2. From the `Users and groups` menu of the app, add any users or groups requiring access to the service.
    ![Azure Enterprise SAML Users](../../assets/azure-enterprise-users.png "Azure Enterprise SAML Users")
@@ -200,7 +200,7 @@ data:
 
 1. Open a new browser tab and enter your ArgoCD URI: https://`<my-argo-cd-url>`
    ![Azure SSO Web Log In](../../assets/azure-sso-web-log-in-via-azure.png "Azure SSO Web Log In")
-3. Click `LOGIN VIA AZURE` button to log in with your Azure Active Directory account. You’ll see the ArgoCD applications screen.
+3. Click `LOGIN VIA AZURE` button to log in with your Microsoft Entra ID account. You’ll see the ArgoCD applications screen.
    ![Azure SSO Web Application](../../assets/azure-sso-web-application.png "Azure SSO Web Application")
 4. Navigate to User Info and verify Group ID. Groups will have your group’s Object ID that you added in the `Setup permissions for Azure AD Application` step.
    ![Azure SSO Web User Info](../../assets/azure-sso-web-user-info.png "Azure SSO Web User Info")
